@@ -183,9 +183,6 @@ public class ExportAllIdsGraphicalTask extends AbstractTask {
   }
 
   private void exportFeatureCharts(File flistFolder, FeatureListRow row) {
-    if (row.getSpectralLibraryMatches().isEmpty() && row.getLipidMatches().isEmpty()) {
-      return;
-    }
 
     if (exportShape) {
       exportChromatograms(flistFolder, row);
